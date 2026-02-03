@@ -49,5 +49,108 @@ ex31_1 = [3,4,2] < [3,4,3]
 ex32_1 :: Bool
 ex32_1 = [3,2,1] > [2,1,0]
 
+ex32_2 :: Bool
+ex32_2 = [3,2,1] > [2,10,100]
+
+ex32_3 :: Bool
+ex32_3 = [3,4,2] < [3,4,3]
+
+ex32_4 :: Bool
+ex32_4 = [3,4,2] > [2,4]
+
+ex32_5 :: Bool
+ex32_5 = [3,4,2] == [3,4,2]
+
+ex32_6 :: Integer
+ex32_6 = head [5,4,3,2,1]
+
+ex32_7 :: [Integer]
+ex32_7 = tail [5,4,3,2,1]
+
+ex32_8 :: Integer
+ex32_8 = last [5,4,3,2,1]
+
+ex32_9 :: [Integer]
+ex32_9 = init [5,4,3,2,1]
+
+ex33_1 :: a
+ex33_1 = head []
+
+ex33_2 :: Int
+ex33_2 = length [5,4,3,2,1]
+
+ex33_3 :: Bool
+ex33_3 = null [1,2,3]
+
+ex33_4 :: Bool
+ex33_4 = null []
+
+ex33_5 :: [Integer]
+ex33_5 = reverse [5,4,3,2,1]
+
+ex34_1 :: [Integer]
+ex34_1 = take 3 [5,4,3,2,1]
+
+ex34_2 :: [Integer]
+ex34_2 = take 1 [3,9,3]
+
+ex34_3 :: [Integer]
+ex34_3 = take 5 [1,2]
+
+ex34_4 :: [Integer]
+ex34_4 = take 0 [6,6,6]
+
+ex34_5 :: [Integer]
+ex34_5 = drop 3 [8,4,2,1,5,6]
+
+ex34_6 :: [Integer]
+ex34_6 = drop 0 [1,2,3,4]
+
+ex34_7 :: [Integer]
+ex34_7 = drop 100 [1,2,3,4]
+
+ex34_8 :: Integer
+ex34_8 = minimum [8,4,2,1,5,6]
+
+ex34_9 :: Integer
+ex34_9 = maximum [1,9,2,3,4]
+
+ex34_10 :: Integer
+ex34_10 = sum [5,2,1,6,3,2,5,7]
+
+ex34_11 :: Integer
+ex34_11 = product [6,2,1,2]
+
+ex34_12 :: Integer
+ex34_12 = product [1,2,5,6,7,9,2,0]
+
+ex35_1 :: Bool
+ex35_1 = 4 `elem` [3,4,5,6]
+
+ex35_2 :: Bool
+ex35_2 = 10 `elem` [3,4,5,6]
+
+ex35_3 :: [Integer]
+ex35_3 = [1..20]
+
+ex35_4 :: [Char]
+ex35_4 = ['a'..'z']
+
+ex35_5 :: [Char]
+ex35_5 = ['K'..'Z']
+
+ex36_1 :: [Integer]
+ex36_1 = [2,4..20]
+
+ex36_2 :: [Integer]
+ex36_2 = [3,6..20]
+
+
+
+
+
+
+
+
 
 
