@@ -145,6 +145,44 @@ ex36_1 = [2,4..20]
 ex36_2 :: [Integer]
 ex36_2 = [3,6..20]
 
+ex36_3 :: [Double]
+ex36_3 = [0.1, 0.3 .. 1]
+
+ex37_1 :: [Integer]
+ex37_1 = take 10 (cycle [1,2,3])
+
+ex37_2 :: [Char]
+ex37_2 = take 12 (cycle "LOL ")
+
+ex37_3 :: [Integer]
+ex37_3 = take 10 (repeat 5)
+
+ex37_4 :: [Integer]
+ex37_4 = replicate 3 10
+
+ex38_1 :: [Integer]
+ex38_1 = [x*2|x <- [1..10]]
+
+ex38_2 :: [Integer]
+ex38_2 = [x*2|x <- [1..10], x*2 >= 12]
+
+ex38_3 :: [Integer]
+ex38_3 = [x | x <- [50..100], x `mod` 7 == 3]
+
+boomBangs :: Integral a => [a] -> [String]
+boomBangs xs = [if x < 10 then "BOOM! " else "BAH! " | x <- xs, odd x]
+
+ex39_1 :: [Integer]
+ex39_1 = [x | x <- [10..20], x /= 13, x /= 15, x /= 19]
+
+ex39_2 :: [Integer]
+ex39_2 = [x+y| x <- [1,2,3], y <- [10,100,1000]]
+
+
+
+
+
+
 
 
 
