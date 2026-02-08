@@ -178,6 +178,35 @@ ex39_1 = [x | x <- [10..20], x /= 13, x /= 15, x /= 19]
 ex39_2 :: [Integer]
 ex39_2 = [x+y| x <- [1,2,3], y <- [10,100,1000]]
 
+ex40_1 :: [Integer]
+ex40_1 = [x*y| x <- [2,5,10], y <- [8,10,11]]
+
+ex40_2 :: [Integer]
+ex40_2 = [x*y| x <- [2,5,10], y <- [8,10,11], x*y > 50]
+
+nouns :: [String]
+nouns = ["tramp", "frog", "priest"]
+
+adjs :: [String]
+adjs = ["lazy", "grumpy", "cunning"]
+
+ex40_3 :: [[Char]]
+ex40_3 = [adj ++ " " ++ noun| adj <- adjs, noun <- nouns]
+
+length' :: Num a => [t] -> a
+length' xs = sum [1 | _ <- xs]
+
+removeNonUppercase :: [Char] -> [Char]
+removeNonUppercase st = [c | c <- st, c `elem` ['A'..'Z']]
+
+xxs :: [[Integer]]
+xxs = [[1,3,5,2,3,1,2],[1,2,3,4,5,6,7],[1,2,4,2,1,6,3,1,3,2]]
+
+ex40_4 :: [[Integer]]
+ex40_4 = [[x | x <- xs, even x ] | xs <- xxs]
+
+
+
 
 
 
