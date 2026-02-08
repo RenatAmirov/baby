@@ -205,8 +205,47 @@ xxs = [[1,3,5,2,3,1,2],[1,2,3,4,5,6,7],[1,2,4,2,1,6,3,1,3,2]]
 ex40_4 :: [[Integer]]
 ex40_4 = [[x | x <- xs, even x ] | xs <- xxs]
 
+ex41_1 :: (Integer, Integer)
+ex41_1 = (1,3)
 
+ex41_2 :: (Integer, Char, String)
+ex41_2 = (3, 'a', "privet")
 
+ex41_3 :: (Integer, Double, String, Char)
+ex41_3 = (50, 50.4, "privet", 'b')
+
+ex43_1 :: Integer
+ex43_1 = fst (8,11)
+
+ex43_2 :: String
+ex43_2 = fst ("Bay", False)
+
+ex43_3 :: Integer
+ex43_3 = snd (8,11)
+
+ex43_4 :: Bool
+ex43_4 = snd ("Bay", False)
+
+ex44_1 :: [(Integer, Integer)]
+ex44_1 = zip [1,2,3,4,5] [5,5,5,5,5]
+
+ex44_2 :: [(Integer, String)]
+ex44_2 = zip [1..5] ["one", "two", "three", "four", "five"]
+
+ex44_3 :: [(Integer, String)]
+ex44_3 = zip [5,3,2,6,2,7,2,5,4,6,6] ["I am", "not", "a turtle"]
+
+ex44_4 :: [(Integer, String)]
+ex44_4 = zip [1..] ["apple", "orange", "cherry", "mango"]
+
+triples :: [(Integer, Integer, Integer)]
+triples = [ (a,b,c) | c <- [1..10], b <- [1..10], a <- [1..10] ]
+
+rightTriangles :: [(Integer, Integer, Integer)]
+rightTriangles = [ (a,b,c) | c <- [1..10], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2]
+
+rightTriangles' :: [(Integer, Integer, Integer)]
+rightTriangles' = [ (a,b,c) | c <- [1..10], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2, a+b+c == 24]
 
 
 
